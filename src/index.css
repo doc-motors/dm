@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #FF0000;
+  --secondary: #1A1A1A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  @apply bg-secondary text-white;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+.section {
+  @apply py-16;
+}
+
+.title {
+  @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+}
+
+.title::after {
+  content: '';
+  @apply block absolute w-full h-1 bg-primary mt-2;
+}
+
+.btn {
+  @apply px-6 py-3 font-medium rounded transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary-dark;
+}
+
+.btn-outline {
+  @apply border-2 border-primary text-white hover:bg-primary hover:text-white;
+}
+
+.card {
+  @apply bg-secondary-light p-6 rounded-lg transition-all duration-300 hover:shadow-lg;
+}
+
+.service-card {
+  @apply bg-secondary-dark border-l-4 border-primary p-6 rounded-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.navbar {
+  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+}
+
+.navbar-scrolled {
+  @apply bg-secondary shadow-lg;
+}
+
+.nav-link {
+  @apply relative mx-2 text-gray-200 hover:text-white transition-all duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Swiper styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--primary) !important;
+}
+
+.testimonials-swiper {
+  padding-bottom: 50px !important;
+}
+
+/* Animated gear background */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gear-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  margin-left: -400px;
+  margin-top: -400px;
+  z-index: 0;
+  opacity: 0.03;
+  animation: spin 60s linear infinite;
+  pointer-events: none;
+}
