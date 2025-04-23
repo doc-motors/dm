@@ -105,13 +105,11 @@ const Contact: React.FC = () => {
           >
             <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2475.5234526872387!2d36.19057115!3d51.7307595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0394b5770c0d%3A0x3f1c8f7c2c1c8f7c!2sDoc%20Motors!5e0!3m2!1sen!2sru!4v1625123456789!5m2!1sen!2sru"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A4b54e8c6539cf4dfc75310063cdedf2ba78b75047044e5f1a90bcec450a2b2fb&amp;source=constructor" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                frameBorder="0"
+                className="w-full h-full"
               ></iframe>
             </div>
           </motion.div>

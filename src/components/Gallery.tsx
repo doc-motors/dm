@@ -10,19 +10,19 @@ const Gallery: React.FC = () => {
   
   const images = [
     {
-      src: "https://images.pexels.com/photos/3807456/pexels-photo-3807456.jpeg",
+      src: "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg",
       alt: "Диагностика двигателя"
     },
     {
-      src: "https://images.pexels.com/photos/3807493/pexels-photo-3807493.jpeg",
+      src: "https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg",
       alt: "Ремонт ходовой части"
     },
     {
-      src: "https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg",
+      src: "https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg",
       alt: "Ремонт электроники"
     },
     {
-      src: "https://images.pexels.com/photos/3807862/pexels-photo-3807862.jpeg",
+      src: "https://images.pexels.com/photos/3642618/pexels-photo-3642618.jpeg",
       alt: "Кузовной ремонт"
     },
     {
@@ -30,7 +30,7 @@ const Gallery: React.FC = () => {
       alt: "Шиномонтаж"
     },
     {
-      src: "https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg",
+      src: "https://images.pexels.com/photos/3822843/pexels-photo-3822843.jpeg",
       alt: "Техническое обслуживание"
     }
   ];
